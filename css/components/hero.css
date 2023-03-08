@@ -1,0 +1,137 @@
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+    padding: 0 10%;
+
+    color: var(--primary-500);
+}
+
+.hero-container .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.hero-container .hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+.hero-container .hero a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    background-color: var(--primary-500);
+    color: var(--primary-50);
+    font-size: 1.2rem;
+    border-radius: 0 50px 0 50px;
+    margin-top: 1rem;
+    align-self: flex-start;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-container .hero a:hover {
+    background-color: var(--primary-700);
+    border-radius: 50px;
+}
+
+.hero-container .hero p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.hero-container .hero-image {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.hero-container .hero-image img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 53% 47% 30% 70% / 75% 61% 39% 25%;
+    z-index: 1;
+    position: absolute;
+}
+
+.hero-container .hero-image .hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.125;
+    background-color: var(--primary-500);
+    animation-name: aura;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 31% 69% 44% 56% / 75% 81% 19% 25%;
+    z-index: 0;
+}
+
+.hero-container .hero-image .hero-shadow:nth-child(2) {
+    background-color: var(--primary-700);
+    border-radius: 66% 34% 20% 80% / 83% 38% 62% 17%;
+    animation-direction: reverse;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .hero-container .hero {
+        width: 40%;
+    }
+    .hero-container .hero h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 2rem;
+    }
+    .hero-container .hero p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .hero-container .hero a {
+        padding: 1rem 2rem;
+        text-decoration: none;
+        background-color: var(--primary-500);
+        color: var(--primary-50);
+        font-size: 1.2rem;
+        border-radius: 0 50px 0 50px;
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+    .hero-container .hero-image {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@keyframes aura {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        scale: 1.5;
+    }
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}

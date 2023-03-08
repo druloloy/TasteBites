@@ -1,0 +1,20 @@
+:root {
+    /* to generate your own color scheme, go to https://uicolors.app/create */
+    /* Primary Color - Monochromatic */
+    --primary-50: #fff5ed;
+    --primary-100: #ffe8d5;
+    --primary-200: #ffd3b5;
+    --primary-300: #ffa872;
+    --primary-400: #fd793a;
+    --primary-500: #fc5513;
+    --primary-600: #ed3909;
+    --primary-700: #c4280a;
+    --primary-800: #9c2110;
+    --primary-900: #7d1e11;
+
+    /* Black */
+    --black: #2d2d2d;
+
+    /* White */
+    --white: #fbfbfb;
+}

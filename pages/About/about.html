@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>All Recipes | TasteBite</title>
+
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <script
+            src="https://kit.fontawesome.com/025a8d6676.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <!-- logo -->
+            <section class="logo">
+                <h1>TasteBite</h1>
+            </section>
+
+            <!-- nav links -->
+            <section class="nav-links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a href="../Recipes/recipes.html">All Recipes</a>
+                    </li>
+                    <li><a href="../About/about.html">About</a></li>
+
+                    <li>
+                        <a href="../Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- burger (mobile) -->
+            <section onclick="openNavPage()" id="burger">
+                <i class="fa-solid fa-burger"></i>
+            </section>
+
+            <!-- nav links page (mobile) -->
+            <section class="nav-page">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a href="../Recipes/recipes.html">All Recipes</a>
+                    </li>
+                    <li><a href="../About/about.html">About</a></li>
+
+                    <li>
+                        <a href="../Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <span onclick="closeNavPage()" id="close-button"
+                    ><i class="fa-solid fa-xmark"></i
+                ></span>
+            </section>
+        </nav>
+
+        <main>
+            <header>
+                <h1>About</h1>
+            </header>
+
+            <article>
+                <p>
+                    TasteBite is your one-stop destination for mouth-watering
+                    recipes that are easy to follow and delicious to taste. Our
+                    website is a treasure trove of recipes from around the world
+                    that are sure to tantalize your taste buds. Whether you're
+                    looking for a quick snack, a healthy meal, or a sumptuous
+                    dessert, TasteBite has got you covered.
+                </p>
+                <p>
+                    Our website is designed to be user-friendly, with
+                    easy-to-navigate pages that make it simple to find the
+                    perfect recipe for any occasion. We understand that cooking
+                    can sometimes be daunting, so we provide step-by-step
+                    instructions that are easy to follow, even for beginners.
+                </p>
+                <p>
+                    At TasteBite, we are passionate about food and we believe
+                    that cooking should be fun and enjoyable. We love to
+                    experiment with new ingredients and flavors, and we are
+                    always on the lookout for new and exciting recipes to share
+                    with our community.
+                </p>
+                <p>
+                    So, if you're looking for inspiration for your next meal,
+                    look no further than TasteBite. With our vast collection of
+                    recipes, you're sure to find something that will delight
+                    your taste buds and impress your family and friends.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <section class="brand">
+                <h1>TasteBite</h1>
+                <p>Slogan</p>
+            </section>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li>
+                    <a href="../Recipes/recipes.html">All Recipes</a>
+                </li>
+                <li><a href="../About/about.html">About</a></li>
+
+                <li>
+                    <a href="../Contact/contact.html">Contact</a>
+                </li>
+            </ul>
+            <p>
+                &copy; 2023 druloloy. All rights reserved.
+                <a href="https://druloloy.github.io/"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+            </p>
+        </footer>
+    </body>
+
+    <script src="../../js/dom.js"></script>
+    <script type="module" src="../../js/configsLoader.js"></script>
+</html>

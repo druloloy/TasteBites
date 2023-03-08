@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>All Recipes | TasteBite</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="../../css/main.css" />
+
+        <script
+            src="https://kit.fontawesome.com/025a8d6676.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <!-- logo -->
+            <section class="logo">
+                <h1>TasteBite</h1>
+            </section>
+
+            <!-- nav links -->
+            <section class="nav-links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a href="../Recipes/recipes.html">All Recipes</a>
+                    </li>
+                    <li><a href="../About/about.html">About</a></li>
+
+                    <li>
+                        <a href="../Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- burger (mobile) -->
+            <section onclick="openNavPage()" id="burger">
+                <i class="fa-solid fa-burger"></i>
+            </section>
+
+            <!-- nav links page (mobile) -->
+            <section class="nav-page">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a href="../Recipes/recipes.html">All Recipes</a>
+                    </li>
+                    <li><a href="../About/about.html">About</a></li>
+
+                    <li>
+                        <a href="../Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <span onclick="closeNavPage()" id="close-a"
+                    ><i class="fa-solid fa-xmark"></i
+                ></span>
+            </section>
+        </nav>
+
+        <main>
+            <section class="recipes">
+                <h1>All Recipes</h1>
+                <section class="recipes-container"></section>
+            </section>
+        </main>
+        <footer>
+            <section class="brand">
+                <h1>TasteBite</h1>
+                <p>Slogan</p>
+            </section>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li>
+                    <a href="#">All Recipes</a>
+                </li>
+                <li><a href="../About/about.html">About</a></li>
+
+                <li>
+                    <a href="../Contact/contact.html">Contact</a>
+                </li>
+            </ul>
+            <p>
+                &copy; 2023 druloloy. All rights reserved.
+                <a href="https://druloloy.github.io/"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+            </p>
+        </footer>
+    </body>
+
+    <script defer src="../../js/dom.js"></script>
+    <script defer src="../../configs/web.config.js"></script>
+    <script defer src="../../js/configsLoader.js"></script>
+    <script defer src="../../data/products.js"></script>
+    <script defer src="../../js/loadData.js"></script>
+</html>

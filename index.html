@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TasteBites</title>
+
+        <link rel="stylesheet" href="./css/main.css" />
+        <script
+            src="https://kit.fontawesome.com/025a8d6676.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <!-- logo -->
+            <section class="logo">
+                <h1>TasteBite</h1>
+            </section>
+
+            <!-- nav links -->
+            <section class="nav-links">
+                <ul>
+                    <li><a href="#>Home</a></li>
+                    <li>
+                        <a href="./pages/Recipes/recipes.html">All Recipes</a>
+                    </li>
+                    <li><a href="./pages/About/about.html">About</a></li>
+
+                    <li>
+                        <a href="./pages/Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- burger (mobile) -->
+            <section onclick="openNavPage()" id="burger">
+                <i class="fa-solid fa-burger"></i>
+            </section>
+
+            <!-- nav links page (mobile) -->
+            <section class="nav-page">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="./pages/Recipes/recipes.html">All Recipes</a>
+                    </li>
+                    <li><a href="./pages/About/about.html">About</a></li>
+                    <li>
+                        <a href="./pages/Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <span onclick="closeNavPage()" id="close-button"
+                    ><i class="fa-solid fa-xmark"></i
+                ></span>
+            </section>
+        </nav>
+
+        <!-- hero banner -->
+        <main class="hero-container">
+            <div class="hero">
+                <h1>Discover the best recipes</h1>
+                <p>
+                    TasteBite is a recipe website that provides you with the
+                    best recipes from all over the world.
+                </p>
+                <a href="./pages/Recipes/recipes.html">Get Started</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="./assets/banner/pexels-cats-coming-920220.jpg"
+                    alt="Photo by Cats Coming: https://www.pexels.com/photo/slice-of-loaf-bread-with-dog-face-920220/"
+                    draggable="false"
+                />
+                <span class="hero-shadow"></span>
+                <span class="hero-shadow"></span>
+            </div>
+        </main>
+        <footer>
+            <section class="brand">
+                <h1>TasteBite</h1>
+                <p>Slogan</p>
+            </section>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/Recipes/recipes.html">All Recipes</a></li>
+                <li><a href="./pages/About/about.html">About</a></li>
+                <li><a href="./pages/Contact/contact.html">Contact</a></li>
+            </ul>
+            <p>
+                &copy; 2023 druloloy. All rights reserved.
+                <a href="https://druloloy.github.io/"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+            </p>
+        </footer>
+    </body>
+
+    <script src="./js/dom.js"></script>
+    <script src="./configs/web.config.js"></script>
+    <script src="./js/configsLoader.js"></script>
+</html>
